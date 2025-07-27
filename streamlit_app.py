@@ -101,7 +101,7 @@ def tentang():
     st.markdown(
         f"""
         <style>
-            .blurimg {{
+            .blurimg {
                 background-image: url("https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/bg2.jpg");
                 background-size: cover;
                 position: fixed;
