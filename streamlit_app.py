@@ -121,7 +121,7 @@ def tentang():
     <style>
         p {{
             font-size: 25px;
-            color: red;
+            color: #2F3E5C;
             text-align: justify;
             font-family:Quicksand;
         
