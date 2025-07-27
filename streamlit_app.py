@@ -249,27 +249,50 @@ def identifikasi():
             gambar = None
 
  if rumus in kamus_nama_senyawa:
-                data = kamus_nama_senyawa[rumus]
-                nama_iupac = data['iupac']
-                nama_trivial = data['trivial']
-                gambar = data.get('gambar', None)
-                golongan = data.get('golongan', "-")
-                rumus_umum = data.get('rumus_umum', "-")
-            else:
-                if 'Asam Karboksilat' in hasil:
-                    nama_iupac = f"Asam {rumus.lower()}"
-                elif 'Aldehid' in hasil:
-                    nama_iupac = f"{rumus.lower()} - al"
-                elif 'Keton' in hasil:
-                    nama_iupac = f"{rumus.lower()} - on"
-                elif 'Alkohol' in hasil:
-                    nama_iupac = f"{rumus.lower()} - ol"
-                elif 'Amina' in hasil:
-                    nama_iupac = f"{rumus.lower()} - amina"
+     data = kamus_nama_senyawa[rumus]
+     nama_iupac = data['iupac']
+     nama_trivial = data['trivial']
+     gambar = data.get('gambar', None)
+     golongan = data.get('golongan', "-")
+     rumus_umum = data.get('rumus_umum', "-")
+ else:
+    if 'Asam Karboksilat' in hasil:
+         nama_iupac = f"Asam {rumus.lower()}"
+    elif 'Aldehid' in hasil:
+         nama_iupac = f"{rumus.lower()} - al"
+    elif 'Keton' in hasil:
+         nama_iupac = f"{rumus.lower()} - on"
+    elif 'Alkohol' in hasil:
+         nama_iupac = f"{rumus.lower()} - ol"
+    elif 'Amina' in hasil:
+         nama_iupac = f"{rumus.lower()} - amina"
 
+     st.markdown("### 🔍 Hasil Identifikasi")
+     if gambar:
+      st.image(f"https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/{gambar}", width=250)
+            with st.container(border=True):
+                st.write(f"Rumus Diberikan: {input_rumus}")
+                st.write(f"Rumus Distandarisasi: {rumus}")
+                if rumus_umum != "-":
+                    st.write(f"Rumus Umum: {rumus_umum}")
+                if golongan != "-":
+                    st.write(f"Golongan Senyawa: {golongan}")
+                st.write(f"Gugus Fungsi Terdeteksi: {', '.join(hasil)}")
+                st.write(f"Nama IUPAC: {nama_iupac}")
+                st.write(f"Nama Trivial: {nama_trivial}")
+
+    else:
+        input_nama = st.text_input("Masukkan nama senyawa (IUPAC atau trivial, contoh: metana, etana, asam asetat):")
+      if input_nama:
+            input_nama_lower = input_nama.strip().lower()
+            found = None
+            for rumus, data in kamus_nama_senyawa.items():
+                # Cocokkan dengan nama IUPAC atau trivial
+                if data['iupac'].lower() == input_nama_lower or data['trivial'].lower() == input_nama_lower:
+                    found = (rumus, data)
+                    break
             st.markdown("### 🔍 Hasil Identifikasi")
-            if gambar:
-                if found:
+            if found:
                 rumus, data = found
                 gambar = data.get('gambar', None)
                 if gambar:
@@ -284,9 +307,8 @@ def identifikasi():
             else:
                 st.warning("Nama senyawa tidak ditemukan dalam database.")
 
-
-
-
+      
+      
 option = st.sidebar.radio(
     "Menu:",
     ("Identifikasi Gugus Fungsi", "Dasar Teori", "Tentang Website")
