@@ -123,7 +123,7 @@ def tentang():
             font-size: 25px;
             color: red;
             text-align: justify;
-            font-family:'Poppins', sans-serif
+            font-family:Quicksand;
         
         }}
     </style>
