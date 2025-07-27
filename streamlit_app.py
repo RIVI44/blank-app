@@ -115,7 +115,7 @@ def tentang():
         """,
         unsafe_allow_html=True
     )
-    st.title("Tentang Website")
+    st.title("🎯Tentang Website")
     st.markdown(
     f"""
     <style>
