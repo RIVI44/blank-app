@@ -232,7 +232,7 @@ def identifikasi():
 
 
     # Pilih mode pencarian
-    search_mode = st.radio("Cari berdasarkan:", ("Rumus Senyawa", "Nama Senyawa"))
+    search_mode = st.radio("Cari berdasarkan:", ("Rumus Senyawa", "Nama Senyawa","Gugus Fungsi"))
 
     if search_mode == "Rumus Senyawa":
         input_rumus = st.text_input("Masukkan rumus senyawa, contoh: CH3CH2COOH atau CH3-CH2-COOH (ditulis huruf kapital) :")
