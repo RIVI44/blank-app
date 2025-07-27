@@ -120,7 +120,7 @@ def tentang():
     f"""
     <style>
         p {{
-            font-size: 18px;
+            font-size: 25px;
             color: red;
             text-align: justify;
             font-family: "Comic Sans MS", cursive, sans-serif;
