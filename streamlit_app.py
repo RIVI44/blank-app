@@ -124,6 +124,8 @@ def tentang():
             color: red;
             text-align: justify;
             font-family:'Poppins', sans-serif;
+            padding: 25px;
+            border-radius: 20px;
         }}
     </style>
     <p>
