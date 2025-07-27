@@ -108,8 +108,19 @@ def tentang():
                 inset: 0;
                 filter: blur(4px);
                 background-color: rgba(0, 0, 0, 0.8); /* Transparent black overlay */
-            }}
-        </style>
+             }
+    .custom-text {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 18px;
+        color: #333333;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        line-height: 1.8;
+        text-align: justify;
+    }
+</style>
         <div class="blurimg"></div>
         """,
         unsafe_allow_html=True
