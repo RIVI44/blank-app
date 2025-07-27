@@ -248,7 +248,7 @@ def identifikasi():
             rumus_umum = "-"
             gambar = None
 
- if rumus in kamus_nama_senyawa:
+  if rumus in kamus_nama_senyawa:
      data = kamus_nama_senyawa[rumus]
      nama_iupac = data['iupac']
      nama_trivial = data['trivial']
