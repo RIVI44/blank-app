@@ -101,24 +101,14 @@ def tentang():
     st.markdown(
         f"""
         <style>
-            .blurimg {
+            .blurimg {{
                 background-image: url("https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/bg2.jpg");
                 background-size: cover;
                 position: fixed;
                 inset: 0;
                 filter: blur(4px);
                 background-color: rgba(0, 0, 0, 0.8); /* Transparent black overlay */
-             }
-    .custom-text {
-        font-family: "Comic Sans MS", cursive, sans-serif;
-        font-size: 18px;
-        color: #333333;
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        border-radius: 15px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        line-height: 1.8;
-        text-align: justify;
+    
     }
 </style>
         <div class="blurimg"></div>
