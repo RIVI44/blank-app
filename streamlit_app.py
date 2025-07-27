@@ -161,7 +161,7 @@ def teori():
         """,
         unsafe_allow_html=True
     )
-    st.title("Dasar Teori")
+    st.title("📚Dasar Teori")
     st.markdown(
     f"""
     <style>
