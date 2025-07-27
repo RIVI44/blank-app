@@ -309,7 +309,7 @@ def identifikasi():
 
       
 option = st.sidebar.radio(
-    "🏡Menu:",
+    "🏡Menu :",
     ("Identifikasi Gugus Fungsi", "Dasar Teori", "Tentang Website")
 )
 
