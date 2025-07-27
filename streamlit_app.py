@@ -109,7 +109,7 @@ def tentang():
                 filter: blur(4px);
                 background-color: rgba(0, 0, 0, 0.8); /* Transparent black overlay */
     
-    }
+    }}
 </style>
         <div class="blurimg"></div>
         """,
