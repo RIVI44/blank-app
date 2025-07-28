@@ -24,18 +24,18 @@ kamus_nama_senyawa = {
     'CH3COOC2H5': {'iupac': 'Etil etanoat', 'trivial': '','gambar':'etil etanoat.png', 'golongan': 'Ester', 'rumus_umum': 'R-COO-R'},
     'CH3CH2COOCH3': {'iupac': 'Metil propanoat', 'trivial': '','gambar':'tdm434bh.png', 'golongan': 'Ester', 'rumus_umum': 'R-COO-R'},
     'CH3CH2COOC2H5': {'iupac': 'Etil propanoat', 'trivial': '','gambar':'1a8shj38.png', 'golongan': 'Ester', 'rumus_umum': 'R-COO-R'},
-    'CH3CH2CH2COOCH3': {'iupac': 'Metil butanoat', 'trivial': '','gambar':'metilbutanoat.png','golongan': 'Ester', 'rumus_umum': 'R-COO-R'},
+    'CH3CH2CH2COOCH3': {'iupac': 'Metil butanoat', 'trivial': '', 'golongan': 'Ester', 'rumus_umum': 'R-COO-R'},
     'CH3CH2CH2COOC2H5': {'iupac': 'Etil butanoat', 'trivial': '','gambar':'pltsuutq.png', 'golongan': 'Ester', 'rumus_umum': 'R-COO-R'},
-    'CH3COOCH2CH2CH3': {'iupac': 'Propanil etanoat', 'trivial': '','gambar':'propanil etanoat.png', 'golongan': 'Ester', 'rumus_umum': 'R-COO-R'},
+    'CH3COOCH2CH2CH3': {'iupac': 'Propanil etanoat', 'trivial': '', 'golongan': 'Ester', 'rumus_umum': 'R-COO-R'},
     'CH3COOCH(CH3)2': {'iupac': 'Isopropil etanoat', 'trivial': '','gambar':'0jtr3m8o.png', 'golongan': 'Ester', 'rumus_umum': 'R-COO-R'},
-    'C6H5CH2COOCH3': {'iupac': 'Benzil etanoat', 'trivial': '','gambar':'benzil etanoat.png', 'golongan': 'Ester', 'rumus_umum': 'R-COO-R'},
-    'CH3COOCH(CH2CH3)CH3': {'iupac': 'Oktil etanoat', 'trivial': '','gambar':'oktiletanoat.png','golongan': 'Ester', 'rumus_umum':'R-COO-R'},
-    'CH3NH2':{'iupac':'Metilamin','trivial':'','gambar':'metilamin.jpg','golongan':'Amina primer','rumus_umum':'R-NH2'},
-    'CH3CH32NH': {'iupac': 'Dimetilamin', 'trivial': '','gambar':'dimetilamin.png','golongan': 'Amina sekunder', 'rumus_umum': 'R2NH'},
-    'CH3CH3CH3N': {'iupac': 'Trimetilamin', 'trivial': '','gambar':'trimetilamin.png','golongan': 'Amina tersier', 'rumus_umum': 'R3N'},
-    'CH3CH2NH2': {'iupac': 'Etilamin', 'trivial': '','gambar':'etilamin.png', 'golongan': 'Amina primer', 'rumus_umum': 'R-NH2'},
-    'C6H5CH2NH2': {'iupac': 'Benzilamin', 'trivial': '','gambar':'benzilamin.png','golongan': 'Amina primer', 'rumus_umum': 'ArCH2NH2'},
-    'C6H5NH2': {'iupac': 'Anilin', 'trivial': '','gambar':'anilin (2).png', 'golongan': 'Amina primer aromatik', 'rumus_umum': 'Ar-NH2'},
+    'C6H5CH2COOCH3': {'iupac': 'Benzil etanoat', 'trivial': '', 'golongan': 'Ester', 'rumus_umum': 'R-COO-R'},
+    'CH3COOCH(CH2CH3)CH3': {'iupac': 'Oktil etanoat', 'trivial': '', 'golongan': 'Ester', 'rumus_umum':'R-COO-R'},
+    'CH3NH2':{'iupac':'Metilamin','trivial':'','golongan':'Amina primer','rumus_umum':'R-NH2'},
+    'CH3CH32NH': {'iupac': 'Dimetilamin', 'trivial': '', 'golongan': 'Amina sekunder', 'rumus_umum': 'R2NH'},
+    'CH3CH3CH3N': {'iupac': 'Trimetilamin', 'trivial': '', 'golongan': 'Amina tersier', 'rumus_umum': 'R3N'},
+    'CH3CH2NH2': {'iupac': 'Etilamin', 'trivial': '', 'golongan': 'Amina primer', 'rumus_umum': 'R-NH2'},
+    'C6H5CH2NH2': {'iupac': 'Benzilamin', 'trivial': '', 'golongan': 'Amina primer', 'rumus_umum': 'ArCH2NH2'},
+    'C6H5NH2': {'iupac': 'Anilin', 'trivial': '', 'golongan': 'Amina primer aromatik', 'rumus_umum': 'Ar-NH2'},
     'CH3OH': {'iupac': 'Metanol', 'trivial': 'Alkohol metil / spiritus', 'gambar':'metanol.png','golongan': 'Alkohol primer', 'rumus_umum': 'R-OH'},
     'C2H5OH': {'iupac': 'Etanol', 'trivial': 'Alkohol etil / alkohol', 'gambar':'etanol.jpg','golongan': 'Alkohol primer', 'rumus_umum': 'R-OH'},
     'CH3CH2CH2OH': {'iupac': '1-Propanol', 'trivial': 'n-Propanol', 'gambar':'1propanol.jpg','golongan': 'Alkohol primer', 'rumus_umum': 'R-OH'},
@@ -70,30 +70,30 @@ kamus_nama_senyawa = {
     'CH3CH3': {'iupac': 'Etana', 'trivial': '-','gambar':'etana.jpg',"golongan":"Alkana","rumus_umum":"CnH2n+2"},
     'CH3CH2CH3': {'iupac': 'Propana', 'trivial': '-','gambar':'propana.jpg',"golongan":"Alkana","rumus_umum":"CnH2n+2"},
     'CH3CH2CH2CH3': {'iupac': 'Butana', 'trivial': '-','gambar':'butana.jpg',"golongan":"Alkana","rumus_umum":"CnH2n+2"},
-    'CH3CH2CH2CH2CH3': {'iupac': 'Pentana', 'trivial': '-','gambar':'pentana.png',"golongan":"Alkana","rumus_umum":"CnH2n+2"},
-    'CH3CH2CH2CH2CH2CH3': {'iupac': 'Heksana', 'trivial': '-','gambar':'heksana.png',"golongan":"Alkana","rumus_umum":"CnH2n+2"},
-    'CH3CH2CH2CH2CH2CH2CH3': {'iupac': 'Heptana', 'trivial': '-','gambar':'heptana.png',"golongan":"Alkana","rumus_umum":"CnH2n+2"},
-    'CH3CH2CH2CH2CH2CH2CH2CH3': {'iupac': 'Oktana', 'trivial': '-','gambar':'oktana.png',"golongan":"Alkana","rumus_umum":"CnH2n+2"},
-    'CH3CH2CH2CH2CH2CH2CH2CH2CH3': {'iupac': 'Nonana', 'trivial': '-','gambar':'nonana.png', "golongan":"Alkana","rumus_umum":"CnH2n+2"},
-    'CH3CH2CH2CH2CH2CH2CH2CH2CH2CH3': {'iupac': 'Dekana', 'trivial': '-','gambar':'dekana.png',"golongan":"Alkana","rumus_umum":"CnH2n+2"},
-    'CH2CH2': {'iupac': 'Etena', 'trivial': 'Etilena','gambar':'etena.png',"golongan":"Alkena","rumus_umum":"CnH2n"},
-    'CH2CHCH3': {'iupac': 'Propena', 'trivial': 'Propilena','gambar':'propena.png',"golongan":"Alkena","rumus_umum":"CnH2n"},
-    'CH2CHCH2CH3': {'iupac': 'Butena', 'trivial': '-','gambar':'butenas.png',"golongan":"Alkena","rumus_umum":"CnH2n"},
-    'CH2CHCH2CH2CH3': {'iupac': 'Pentena', 'trivial': '-','gambar':'pentena.png',"golongan":"Alkena","rumus_umum":"CnH2n"},
-    'CH2CHCH2CH2CH2CH3': {'iupac': 'Heksena', 'trivial': '-','gambar':'heksena.png',"golongan":"Alkena","rumus_umum":"CnH2n"},
-    'CH2CHCH2CH2CH2CH2CH3': {'iupac': 'Heptena', 'trivial': '-','gambar':'heptena.png',"golongan":"Alkena","rumus_umum":"CnH2n"},
-    'CH2CHCH2CH2CH2CH2CH2CH3': {'iupac': 'Oktena', 'trivial': '-','gambar':'oktena.png',"golongan":"Alkena","rumus_umum":"CnH2n"},
-    'CH2CHCH2CH2CH2CH2CH2CH2CH3': {'iupac': 'Nonena', 'trivial': '-','gambar':'nonena.png',"golongan":"Alkena","rumus_umum":"CnH2n"},
-    'CH2CHCH2CH2CH2CH2CH2CH2CH2CH3': {'iupac': 'Dekena', 'trivial': '-','gambar':'dekuna.png',"golongan":"Alkena","rumus_umum":"CnH2n"},
-    'CHCH': {'iupac': 'Etuna', 'trivial': 'Asetilena','gambar':'etuna (2).png',"golongan":"Alkuna","rumus_umum":"CnH2n-2"},
-    'CHCCH3': {'iupac': 'Propuna', 'trivial': '-','gambar':'propuna.png',"golongan":"Alkuna","rumus_umum":"CnH2n-2"},
+    'CH3CH2CH2CH2CH3': {'iupac': 'Pentana', 'trivial': '-',"golongan":"Alkana","rumus_umum":"CnH2n+2"},
+    'CH3CH2CH2CH2CH2CH3': {'iupac': 'Heksana', 'trivial': '-',"golongan":"Alkana","rumus_umum":"CnH2n+2"},
+    'CH3CH2CH2CH2CH2CH2CH3': {'iupac': 'Heptana', 'trivial': '-',"golongan":"Alkana","rumus_umum":"CnH2n+2"},
+    'CH3CH2CH2CH2CH2CH2CH2CH3': {'iupac': 'Oktana', 'trivial': '-',"golongan":"Alkana","rumus_umum":"CnH2n+2"},
+    'CH3CH2CH2CH2CH2CH2CH2CH2CH3': {'iupac': 'Nonana', 'trivial': '-',"golongan":"Alkana","rumus_umum":"CnH2n+2"},
+    'CH3CH2CH2CH2CH2CH2CH2CH2CH2CH3': {'iupac': 'Dekana', 'trivial': '-',"golongan":"Alkana","rumus_umum":"CnH2n+2"},
+    'CH2CH2': {'iupac': 'Etena', 'trivial': 'Etilena',"golongan":"Alkena","rumus_umum":"CnH2n"},
+    'CH2CHCH3': {'iupac': 'Propena', 'trivial': 'Propilena',"golongan":"Alkena","rumus_umum":"CnH2n"},
+    'CH2CHCH2CH3': {'iupac': 'Butena', 'trivial': '-',"golongan":"Alkena","rumus_umum":"CnH2n"},
+    'CH2CHCH2CH2CH3': {'iupac': 'Pentena', 'trivial': '-',"golongan":"Alkena","rumus_umum":"CnH2n"},
+    'CH2CHCH2CH2CH2CH3': {'iupac': 'Heksena', 'trivial': '-',"golongan":"Alkena","rumus_umum":"CnH2n"},
+    'CH2CHCH2CH2CH2CH2CH3': {'iupac': 'Heptena', 'trivial': '-',"golongan":"Alkena","rumus_umum":"CnH2n"},
+    'CH2CHCH2CH2CH2CH2CH2CH3': {'iupac': 'Oktena', 'trivial': '-',"golongan":"Alkena","rumus_umum":"CnH2n"},
+    'CH2CHCH2CH2CH2CH2CH2CH2CH3': {'iupac': 'Nonena', 'trivial': '-',"golongan":"Alkena","rumus_umum":"CnH2n"},
+    'CH2CHCH2CH2CH2CH2CH2CH2CH2CH3': {'iupac': 'Dekena', 'trivial': '-',"golongan":"Alkena","rumus_umum":"CnH2n"},
+    'CHCH': {'iupac': 'Etuna', 'trivial': 'Asetilena',"golongan":"Alkuna","rumus_umum":"CnH2n-2"},
+    'CHCCH3': {'iupac': 'Propuna', 'trivial': '-',"golongan":"Alkuna","rumus_umum":"CnH2n-2"},
     'CHCCH2CH3': {'iupac': 'Butuna', 'trivial': '-','gambar':'butuna.png',"golongan":"Alkuna","rumus_umum":"CnH2n-2"},
     'CHCCH2CH2CH3': {'iupac': 'Pentuna', 'trivial': '-','gambar':'pentuna (2).png',"golongan":"Alkuna","rumus_umum":"CnH2n-2"},
     'CHCCH2CH2CH2CH3': {'iupac': 'Heksuna', 'trivial': '-','gambar':'qgzmmmyc.png',"golongan":"Alkuna","rumus_umum":"CnH2n-2"},
     'CHCCH2CH2CH2CH2CH3': {'iupac': 'Heptuna', 'trivial': '-','gambar':'heptuna.png',"golongan":"Alkuna","rumus_umum":"CnH2n-2"},
     'CHCCH2CH2CH2CH2CH2CH3': {'iupac': 'Oktuna', 'trivial': '-','gambar':'oktuna.png',"golongan":"Alkuna","rumus_umum":"CnH2n-2"},
-    'CHCCH2CH2CH2CH2CH2CH2CH3': {'iupac': 'Nonuna', 'trivial': '-','gambar':'nonuna.png',"golongan":"Alkuna","rumus_umum":"CnH2n-2"},
-    'CHCCH2CH2CH2CH2CH2CH2CH2CH3': {'iupac': 'Dekuna', 'trivial': '-','gambar':'dekuna.png',"golongan":"Alkuna","rumus_umum":"CnH2n-2"},
+    'CHCCH2CH2CH2CH2CH2CH2CH3': {'iupac': 'Nonuna', 'trivial': '-',"golongan":"Alkuna","rumus_umum":"CnH2n-2"},
+    'CHCCH2CH2CH2CH2CH2CH2CH2CH3': {'iupac': 'Dekuna', 'trivial': '-',"golongan":"Alkuna","rumus_umum":"CnH2n-2"},
 }
 
 
@@ -102,29 +102,25 @@ def tentang():
         f"""
         <style>
             .blurimg {{
-                background-image: url("https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/bg2.jpg");
+                background-image: url("https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/background.jpg");
                 background-size: cover;
                 position: fixed;
                 inset: 0;
                 filter: blur(4px);
                 background-color: rgba(0, 0, 0, 0.8); /* Transparent black overlay */
-    
             }}
         </style>
         <div class="blurimg"></div>
         """,
         unsafe_allow_html=True
     )
-    st.title("🎯Tentang Website")
+    st.title("Tentang Website")
     st.markdown(
     f"""
     <style>
         p {{
-            font-size: 25px;
-            color: #8A1C1C;
-            text-align: justify;
-            font-family:Quicksand;
-        
+            font-size: 18px;
+            color: white;
         }}
     </style>
     <p>
@@ -145,52 +141,8 @@ def tentang():
     unsafe_allow_html=True
     )
 
-def teori():
-    st.markdown(
-        f"""
-        <style>
-            .blurimg {{
-                background-image: url("https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/bg2.jpg");
-                background-size: cover;
-                position: fixed;
-                inset: 0;
-                filter: blur(4px);
-                background-color: rgba(0, 0, 0, 0.8); /* Transparent black overlay */
-            }}
-        </style>
-        <div class="blurimg"></div>
-        """,
-        unsafe_allow_html=True
-    )
-    st.title("📚Dasar Teori")
-    st.markdown(
-    f"""
-    <style>
-        p {{
-            font-size: 18px;
-            color: red;
-        }}
-    </style>
-    <p>
-    Alkana   
-    Alkana disebut juga hidrokarbon parafin (bahasa latin parum affinis afinitas kecil). Penamaan ini didasarkan pada sifat alkana yang sukar bereaksi dengan berbagai pereaksi pada kondisi biasa. Rumus umum alkana dapat ditulis sebagai berikut CH2n+2 sehingga untuk harga n = 1, 2, 3, 4, 5, ... dan seterusnya, rumus molekulnya berturut-turut adalah CH, (metana), C₂H₃ (etana), C₂H₃ (propana), C4H10 (butana), CH12 (pentana).....dan seterusnya. Alkana tergolong zat yang kurang reaktif (sukar bereaksi dengan senyawa lain). Pada temperatur ruang tidak bereaksi dengan asam dan basa kuat, tidak dapat dioksidasikan oleh KMnO, atau K2Cr2O7. Alkana dapat terhalogenasi di bawah pengaruh sinar ultra violet atau pada temperatur 250°C-400°C. •	Makin besar jumlah atom C-nya, makin tinggi titik cair, titik didih, dan berat jenisnya	Alkana yang berwujud gas tidak berbau, yang berwujud cairan memiliki bau yang khas, dan yang berbentuk padatan tidak berbau	Semua alkana praktis tidak larut dalam air, tetapi larut dalam pelarut organik.
-
-    Alkena
-    Alkena disebut juga hidrokarbon olefin (olefiant gas gas pembentuk minyak). Penamaan ini merujuk pada kenyataan bahwa suku pertama golongan alkena (etena/etilena) jika direaksikan dengan klor atau brom menghasilkan cairan yang menyerupai minyak. Rumus umum alkena dapat ditulis sebagai berikut C,Han, sehingga untuk harga n = 2, 3, 4, 5, ... dan seterusnya, rumus molekulnya berturut-turut adalah C₂H₄ (etena), C₂H₃ (propena), C₂H₃ (butena), CsHto (pentena),....dan seterusnya. Sifar Fisika: pada temperatur ruang, alkena yang mengandung C₂ sampai Ca berupa gas, Cs sampai C17 berupa cairan, sedangkan untuk C₁ atau lebih berupa padatan. Dan pada sifat kimia Pada temperatur ruang, alkena dapat diadisi oleh Cl₂, Br₂, dan la tanpa katalisator, Bereaksi dengan HCI dan H₂SO₄, dan dapat dioksidasi oleh KMnO, dan K2Cr2O7.
-
-    Alkuna
-    Rumus umum alkuna dapat ditulis sebagai berikut C,Hana, sehingga untuk harga n2, 3, 4, 5, ... dan seterusnya, rumus molekulnya berturut-turut adalah C₂H₂ (etuna), C₂H₄ (propuna), CH (butuna), CH (pentuna).....dan seterusnya. Senyawa yang terpenting dalam golongan alkuna adalah etuna (asitilena). Sifat fisika Pada temperatur ruang, alkuna yang mengandung C₂ sampai C, berupa gas, Cs sampai C, berupa cairan, sedangkan untuk Cte atau lebih berupa padatan. Dan sifat kimia alkuna mirip dengan alkena, namun alkuna lebih reaktif dari pada alkena. Pada temperatur ruang, alkuna dapat diadisi oleh Cl2, Br2, dan 12 tanpa katalisator, bereaksi dengan HCI dan H₂SO₄, dan dapat dioksidasi oleh KMnO, dan K₂Cr₂O.
     
-    Alkohol
-    Alkohol adalah senyawaan organik yang dapat dianggap sebagai turunan dari alkana dengan penggantian satu atau lebih atom H pada alkana oleh gugus hidroksil (-OH). Berdasarkan jumlah gugus -OH yang terdapat dalam tiap molekulnya, alkohol dapat dibedakan:1. Alkohol monohidrat, yaitu alkohol yang mengandung satu gugus hidroksil;2. Alkohol dihidrat, yaitu alkohol yang mengandung dua gugus hidroksil; 3. Alkohol trihidrat, yaitu alkohol yang mengandung tiga gugus hidroksil; 4. Alkohol polihidrat, yaitu alkohol yang mengandung empat atau lebih gugus hidroksil. Berdasarkan atom karbon yang mengikat gugus -OH, maka alkohol di bedakan menjadi:
-1. Alkohol primer (1) adalah alkohol yang gugus -OH nya diikat oleh atom C primer (atom C yang berikatan dengan satu atom C yang lain).
-2. Alkohol sekunder (2") adalah alkohol yang gugus -OH nya diikat oleh atom C sekunderr (atom C yang berikatan dengan dua atom C yang lain).
-3. Alkohol tersier (3) adalah alkohol yang gugus -OH nya diikat oleh atom C tersier (atom C yang berikatan dengan tiga atom C yang lain).
 
-     </p>
-    """,
-    unsafe_allow_html=True
-    )
 
 
 
@@ -234,117 +186,88 @@ def identifikasi():
     # st.image("https://raw.githubusercontent.com/RIVI44/LPK-KEDUA-/main/WhatsApp%20Image%202025-07-19%20at%2013.17.34_bfbfabba.jpg", use_container_width=True)
 
 
-  # Pilih mode pencarian
-search_mode = st.radio("Cari berdasarkan:", ("Rumus Senyawa", "Nama Senyawa", "Gugus Fungsi"))
+    # Pilih mode pencarian
+    search_mode = st.radio("Cari berdasarkan:", ("Rumus Senyawa", "Nama Senyawa"))
 
-if search_mode == "Rumus Senyawa":
-    input_rumus = st.text_input("Masukkan rumus senyawa, contoh: CH3CH2COOH atau CH3-CH2-COOH (ditulis huruf kapital) :")
-    if input_rumus:
-        rumus = input_rumus.replace("-", "").replace("=", "").replace("≡", "")
-        hasil = identifikasi_gugus_fungsi(rumus)
-        ikatan = identifikasi_ikatan(rumus)
+    if search_mode == "Rumus Senyawa":
+        input_rumus = st.text_input("Masukkan rumus senyawa (contoh: CH3CH2OH atau CH3-CH2-OH):")
+        if input_rumus:
+            rumus = input_rumus.replace("-", "").replace("=", "").replace("≡", "")
+            hasil = identifikasi_gugus_fungsi(rumus)
+            ikatan = identifikasi_ikatan(rumus)
 
-        nama_iupac = "-"
-        nama_trivial = "-"
-        golongan = "-"
-        rumus_umum = "-"
-        gambar = None
+            nama_iupac = "-"
+            nama_trivial = "-"
+            golongan = "-"
+            rumus_umum = "-"
+            gambar = None
 
-        if rumus in kamus_nama_senyawa:
-            data = kamus_nama_senyawa[rumus]
-            nama_iupac = data['iupac']
-            nama_trivial = data['trivial']
-            gambar = data.get('gambar', None)
-            golongan = data.get('golongan', "-")
-            rumus_umum = data.get('rumus_umum', "-")
-        else:
-            if 'Asam Karboksilat' in hasil:
-                nama_iupac = f"Asam {rumus.lower()}"
-            elif 'Aldehid' in hasil:
-                nama_iupac = f"{rumus.lower()} - al"
-            elif 'Keton' in hasil:
-                nama_iupac = f"{rumus.lower()} - on"
-            elif 'Alkohol' in hasil:
-                nama_iupac = f"{rumus.lower()} - ol"
-            elif 'Amina' in hasil:
-                nama_iupac = f"{rumus.lower()} - amina"
+            if rumus in kamus_nama_senyawa:
+                data = kamus_nama_senyawa[rumus]
+                nama_iupac = data['iupac']
+                nama_trivial = data['trivial']
+                gambar = data.get('gambar', None)
+                golongan = data.get('golongan', "-")
+                rumus_umum = data.get('rumus_umum', "-")
+            else:
+                if 'Asam Karboksilat' in hasil:
+                    nama_iupac = f"Asam {rumus.lower()}"
+                elif 'Aldehid' in hasil:
+                    nama_iupac = f"{rumus.lower()} - al"
+                elif 'Keton' in hasil:
+                    nama_iupac = f"{rumus.lower()} - on"
+                elif 'Alkohol' in hasil:
+                    nama_iupac = f"{rumus.lower()} - ol"
+                elif 'Amina' in hasil:
+                    nama_iupac = f"{rumus.lower()} - amina"
 
-        st.markdown("### 🔍 Hasil Identifikasi")
-        if gambar:
-            st.image(f"https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/{gambar}", width=250)
-        with st.container(border=True):
-            st.write(f"*Rumus Diberikan:* {input_rumus}")
-            st.write(f"*Rumus Distandarisasi:* {rumus}")
-            if rumus_umum != "-":
-                st.write(f"*Rumus Umum:* {rumus_umum}")
-            if golongan != "-":
-                st.write(f"*Golongan Senyawa:* {golongan}")
-            st.write(f"*Gugus Fungsi Terdeteksi:* {', '.join(hasil)}")
-            st.write(f"*Nama IUPAC:* {nama_iupac}")
-            st.write(f"*Nama Trivial:* {nama_trivial}")
-
-elif search_mode == "Nama Senyawa":
-    input_nama = st.text_input("Masukkan nama senyawa IUPAC atau trivial, contoh: metana, etana, asam asetat ( ditulis huruf kecil atau huruf kapital):")
-    if input_nama:
-        input_nama_lower = input_nama.strip().lower()
-        found = None
-        for rumus, data in kamus_nama_senyawa.items():
-            if data['iupac'].lower() == input_nama_lower or data['trivial'].lower() == input_nama_lower:
-                found = (rumus, data)
-                break
-        st.markdown("### 🔍 Hasil Identifikasi")
-        if found:
-            rumus, data = found
-            gambar = data.get('gambar', None)
+            st.markdown("### 🔍 Hasil Identifikasi")
             if gambar:
                 st.image(f"https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/{gambar}", width=250)
             with st.container(border=True):
-                st.write(f"*Nama Diberikan:* {input_nama}")
-                st.write(f"*Rumus Senyawa:* {rumus}")
-                st.write(f"*Nama IUPAC:* {data['iupac']}")
-                st.write(f"*Nama Trivial:* {data['trivial']}")
-                st.write(f"*Golongan Senyawa:* {data.get('golongan', '-')}")
-                st.write(f"*Rumus Umum:* {data.get('rumus_umum', '-')}")
-        else:
-            st.warning("Nama senyawa tidak ditemukan dalam database.")
+                st.write(f"*Rumus Diberikan:* {input_rumus}")
+                st.write(f"*Rumus Distandarisasi:* {rumus}")
+                if rumus_umum != "-":
+                    st.write(f"*Rumus Umum:* {rumus_umum}")
+                if golongan != "-":
+                    st.write(f"*Golongan Senyawa:* {golongan}")
+                st.write(f"*Gugus Fungsi Terdeteksi:* {', '.join(hasil)}")
+                st.write(f"*Nama IUPAC:* {nama_iupac}")
+                st.write(f"*Nama Trivial:* {nama_trivial}")
 
-elif search_mode == "Gugus Fungsi":
-    input_gugus = st.text_input("Masukkan nama gugus fungsi, contoh: Alkohol, Ester, Keton (huruf bebas):")
-    if input_gugus:
-        gugus_input_lower = input_gugus.strip().lower()
-        hasil_pencarian = []
-        for rumus, data in kamus_nama_senyawa.items():
-            golongan = data.get("golongan", "").lower()
-            if gugus_input_lower in golongan:
-                hasil_pencarian.append((rumus, data))
-
-        st.markdown("### 🔍 Hasil Pencarian Gugus Fungsi")
-        if hasil_pencarian:
-            for rumus, data in hasil_pencarian:
+    else:
+        input_nama = st.text_input("Masukkan nama senyawa (IUPAC atau trivial, contoh: metana, etana, asam asetat):")
+        if input_nama:
+            input_nama_lower = input_nama.strip().lower()
+            found = None
+            for rumus, data in kamus_nama_senyawa.items():
+                # Cocokkan dengan nama IUPAC atau trivial
+                if data['iupac'].lower() == input_nama_lower or data['trivial'].lower() == input_nama_lower:
+                    found = (rumus, data)
+                    break
+            st.markdown("### 🔍 Hasil Identifikasi")
+            if found:
+                rumus, data = found
+                gambar = data.get('gambar', None)
+                if gambar:
+                    st.image(f"https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/{gambar}", width=250)
                 with st.container(border=True):
-                    st.image(f"https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/{data.get('gambar')}", width=200)
+                    st.write(f"*Nama Diberikan:* {input_nama}")
+                    st.write(f"*Rumus Senyawa:* {rumus}")
                     st.write(f"*Nama IUPAC:* {data['iupac']}")
                     st.write(f"*Nama Trivial:* {data['trivial']}")
-                    st.write(f"*Rumus Senyawa:* {rumus}")
                     st.write(f"*Golongan Senyawa:* {data.get('golongan', '-')}")
                     st.write(f"*Rumus Umum:* {data.get('rumus_umum', '-')}")
-        else:
-            st.warning("Gugus fungsi tidak ditemukan atau belum ada datanya.")
+            else:
+                st.warning("Nama senyawa tidak ditemukan dalam database.")
 
 
-
-
-      
 option = st.sidebar.radio(
-    "🏡Menu :",
-    ("Identifikasi Gugus Fungsi", "Dasar Teori", "Tentang Website")
+    "Menu:",
+    ("Indentifikasi Gugus Fungsi", "Tentang Website")
 )
 
-if option == "Identifikasi Gugus Fungsi":
+if option == "Indentifikasi Gugus Fungsi":
     identifikasi()
-elif option == "Dasar Teori":
-    teori()
-elif option == "Tentang Website":
-    tentang()    
-
- 
+if option.find("Tentang") == 0:
+    tentang()
