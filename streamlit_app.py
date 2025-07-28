@@ -309,6 +309,30 @@ def identifikasi():
             else:
                 st.warning("Nama senyawa tidak ditemukan dalam database.")
 
+    elif search_mode == "Gugus Fungsi":
+        input_gugus = st.text_input("Masukkan nama gugus fungsi, contoh: Alkohol, Ester, Keton (huruf bebas):")
+        if input_gugus:
+            gugus_input_lower = input_gugus.strip().lower()
+            hasil_pencarian = []
+            for rumus, data in kamus_nama_senyawa.items():
+                golongan = data.get("golongan", "").lower()
+                if gugus_input_lower in golongan:
+                    hasil_pencarian.append((rumus, data))
+
+            st.markdown("### 🔍 Hasil Pencarian Gugus Fungsi")
+            if hasil_pencarian:
+                for rumus, data in hasil_pencarian:
+                    with st.container(border=True):
+                        st.image(f"https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/{data.get('gambar')}", width=200)
+                        st.write(f"*Nama IUPAC:* {data['iupac']}")
+                        st.write(f"*Nama Trivial:* {data['trivial']}")
+                        st.write(f"*Rumus Senyawa:* {rumus}")
+                        st.write(f"*Golongan Senyawa:* {data.get('golongan', '-')}")
+                        st.write(f"*Rumus Umum:* {data.get('rumus_umum', '-')}")
+            else:
+                st.warning("Gugus fungsi tidak ditemukan atau belum ada datanya.")
+
+
 
       
 option = st.sidebar.radio(
