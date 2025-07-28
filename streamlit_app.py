@@ -288,7 +288,7 @@ def identifikasi():
                 st.write(f"*Nama IUPAC:* {nama_iupac}")
                 st.write(f"*Nama Trivial:* {nama_trivial}")
 
-    else:
+    if:
         input_nama = st.text_input("Masukkan nama senyawa IUPAC atau trivial contoh: metana (Ditulis huruf kecil atau huruf kapital):")
         if input_nama:
             input_nama_lower = input_nama.strip().lower()
