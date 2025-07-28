@@ -141,7 +141,52 @@ def tentang():
     unsafe_allow_html=True
     )
 
+    def teori():
+    st.markdown(
+        f"""
+        <style>
+            .blurimg {{
+                background-image: url("https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/bg2.jpg");
+                background-size: cover;
+                position: fixed;
+                inset: 0;
+                filter: blur(4px);
+                background-color: rgba(0, 0, 0, 0.8); /* Transparent black overlay */
+            }}
+        </style>
+        <div class="blurimg"></div>
+        """,
+        unsafe_allow_html=True
+    )
+    st.title("📚Dasar Teori")
+ st.markdown(
+    f"""
+    <style>
+        p {{
+            font-size: 18px;
+            color: red;
+        }}
+    </style>
+    <p>
+    Alkana   
+    Alkana disebut juga hidrokarbon parafin (bahasa latin parum affinis afinitas kecil). Penamaan ini didasarkan pada sifat alkana yang sukar bereaksi dengan berbagai pereaksi pada kondisi biasa. Rumus umum alkana dapat ditulis sebagai berikut CH2n+2 sehingga untuk harga n = 1, 2, 3, 4, 5, ... dan seterusnya, rumus molekulnya berturut-turut adalah CH, (metana), C₂H₃ (etana), C₂H₃ (propana), C4H10 (butana), CH12 (pentana).....dan seterusnya. Alkana tergolong zat yang kurang reaktif (sukar bereaksi dengan senyawa lain). Pada temperatur ruang tidak bereaksi dengan asam dan basa kuat, tidak dapat dioksidasikan oleh KMnO, atau K2Cr2O7. Alkana dapat terhalogenasi di bawah pengaruh sinar ultra violet atau pada temperatur 250°C-400°C. •	Makin besar jumlah atom C-nya, makin tinggi titik cair, titik didih, dan berat jenisnya	Alkana yang berwujud gas tidak berbau, yang berwujud cairan memiliki bau yang khas, dan yang berbentuk padatan tidak berbau	Semua alkana praktis tidak larut dalam air, tetapi larut dalam pelarut organik.
+
+Alkena
+    Alkena disebut juga hidrokarbon olefin (olefiant gas gas pembentuk minyak). Penamaan ini merujuk pada kenyataan bahwa suku pertama golongan alkena (etena/etilena) jika direaksikan dengan klor atau brom menghasilkan cairan yang menyerupai minyak. Rumus umum alkena dapat ditulis sebagai berikut C,Han, sehingga untuk harga n = 2, 3, 4, 5, ... dan seterusnya, rumus molekulnya berturut-turut adalah C₂H₄ (etena), C₂H₃ (propena), C₂H₃ (butena), CsHto (pentena),....dan seterusnya. Sifar Fisika: pada temperatur ruang, alkena yang mengandung C₂ sampai Ca berupa gas, Cs sampai C17 berupa cairan, sedangkan untuk C₁ atau lebih berupa padatan. Dan pada sifat kimia Pada temperatur ruang, alkena dapat diadisi oleh Cl₂, Br₂, dan la tanpa katalisator, Bereaksi dengan HCI dan H₂SO₄, dan dapat dioksidasi oleh KMnO, dan K2Cr2O7.
+
+ Alkuna
+    Rumus umum alkuna dapat ditulis sebagai berikut C,Hana, sehingga untuk harga n2, 3, 4, 5, ... dan seterusnya, rumus molekulnya berturut-turut adalah C₂H₂ (etuna), C₂H₄ (propuna), CH (butuna), CH (pentuna).....dan seterusnya. Senyawa yang terpenting dalam golongan alkuna adalah etuna (asitilena). Sifat fisika Pada temperatur ruang, alkuna yang mengandung C₂ sampai C, berupa gas, Cs sampai C, berupa cairan, sedangkan untuk Cte atau lebih berupa padatan. Dan sifat kimia alkuna mirip dengan alkena, namun alkuna lebih reaktif dari pada alkena. Pada temperatur ruang, alkuna dapat diadisi oleh Cl2, Br2, dan 12 tanpa katalisator, bereaksi dengan HCI dan H₂SO₄, dan dapat dioksidasi oleh KMnO, dan K₂Cr₂O.
     
+Alkohol
+    Alkohol adalah senyawaan organik yang dapat dianggap sebagai turunan dari alkana dengan penggantian satu atau lebih atom H pada alkana oleh gugus hidroksil (-OH). Berdasarkan jumlah gugus -OH yang terdapat dalam tiap molekulnya, alkohol dapat dibedakan:1. Alkohol monohidrat, yaitu alkohol yang mengandung satu gugus hidroksil;2. Alkohol dihidrat, yaitu alkohol yang mengandung dua gugus hidroksil; 3. Alkohol trihidrat, yaitu alkohol yang mengandung tiga gugus hidroksil; 4. Alkohol polihidrat, yaitu alkohol yang mengandung empat atau lebih gugus hidroksil. Berdasarkan atom karbon yang mengikat gugus -OH, maka alkohol di bedakan menjadi:
+1. Alkohol primer (1) adalah alkohol yang gugus -OH nya diikat oleh atom C primer (atom C yang berikatan dengan satu atom C yang lain).
+2. Alkohol sekunder (2") adalah alkohol yang gugus -OH nya diikat oleh atom C sekunderr (atom C yang berikatan dengan dua atom C yang lain).
+3. Alkohol tersier (3) adalah alkohol yang gugus -OH nya diikat oleh atom C tersier (atom C yang berikatan dengan tiga atom C yang lain).
+
+     </p>
+    """,
+    unsafe_allow_html=True
+    )
 
 
 
