@@ -114,7 +114,7 @@ def tentang():
         """,
         unsafe_allow_html=True
     )
-    st.title("Tentang Website")
+    st.title("🎯Tentang Website")
     st.markdown(
     f"""
     <style>
@@ -159,7 +159,7 @@ def teori():
         """,
         unsafe_allow_html=True
     )
-    st.title("Dasar Teori")
+    st.title("📚Dasar Teori")
     st.markdown(
     f"""
     <style>
