@@ -234,103 +234,103 @@ def identifikasi():
     # st.image("https://raw.githubusercontent.com/RIVI44/LPK-KEDUA-/main/WhatsApp%20Image%202025-07-19%20at%2013.17.34_bfbfabba.jpg", use_container_width=True)
 
 
-    # Pilih mode pencarian
-    search_mode = st.radio("Cari berdasarkan:", ("Rumus Senyawa", "Nama Senyawa","Gugus Fungsi"))
+  # Pilih mode pencarian
+search_mode = st.radio("Cari berdasarkan:", ("Rumus Senyawa", "Nama Senyawa", "Gugus Fungsi"))
 
-    if search_mode == "Rumus Senyawa":
-        input_rumus = st.text_input("Masukkan rumus senyawa, contoh: CH3CH2COOH atau CH3-CH2-COOH (ditulis huruf kapital) :")
-        if input_rumus:
-            rumus = input_rumus.replace("-", "").replace("=", "").replace("≡", "")
-            hasil = identifikasi_gugus_fungsi(rumus)
-            ikatan = identifikasi_ikatan(rumus)
+if search_mode == "Rumus Senyawa":
+    input_rumus = st.text_input("Masukkan rumus senyawa, contoh: CH3CH2COOH atau CH3-CH2-COOH (ditulis huruf kapital) :")
+    if input_rumus:
+        rumus = input_rumus.replace("-", "").replace("=", "").replace("≡", "")
+        hasil = identifikasi_gugus_fungsi(rumus)
+        ikatan = identifikasi_ikatan(rumus)
 
-            nama_iupac = "-"
-            nama_trivial = "-"
-            golongan = "-"
-            rumus_umum = "-"
-            gambar = None
+        nama_iupac = "-"
+        nama_trivial = "-"
+        golongan = "-"
+        rumus_umum = "-"
+        gambar = None
 
-            if rumus in kamus_nama_senyawa:
-                data = kamus_nama_senyawa[rumus]
-                nama_iupac = data['iupac']
-                nama_trivial = data['trivial']
-                gambar = data.get('gambar', None)
-                golongan = data.get('golongan', "-")
-                rumus_umum = data.get('rumus_umum', "-")
-            else:
-                if 'Asam Karboksilat' in hasil:
-                    nama_iupac = f"Asam {rumus.lower()}"
-                elif 'Aldehid' in hasil:
-                    nama_iupac = f"{rumus.lower()} - al"
-                elif 'Keton' in hasil:
-                    nama_iupac = f"{rumus.lower()} - on"
-                elif 'Alkohol' in hasil:
-                    nama_iupac = f"{rumus.lower()} - ol"
-                elif 'Amina' in hasil:
-                    nama_iupac = f"{rumus.lower()} - amina"
+        if rumus in kamus_nama_senyawa:
+            data = kamus_nama_senyawa[rumus]
+            nama_iupac = data['iupac']
+            nama_trivial = data['trivial']
+            gambar = data.get('gambar', None)
+            golongan = data.get('golongan', "-")
+            rumus_umum = data.get('rumus_umum', "-")
+        else:
+            if 'Asam Karboksilat' in hasil:
+                nama_iupac = f"Asam {rumus.lower()}"
+            elif 'Aldehid' in hasil:
+                nama_iupac = f"{rumus.lower()} - al"
+            elif 'Keton' in hasil:
+                nama_iupac = f"{rumus.lower()} - on"
+            elif 'Alkohol' in hasil:
+                nama_iupac = f"{rumus.lower()} - ol"
+            elif 'Amina' in hasil:
+                nama_iupac = f"{rumus.lower()} - amina"
 
-            st.markdown("### 🔍 Hasil Identifikasi")
+        st.markdown("### 🔍 Hasil Identifikasi")
+        if gambar:
+            st.image(f"https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/{gambar}", width=250)
+        with st.container(border=True):
+            st.write(f"*Rumus Diberikan:* {input_rumus}")
+            st.write(f"*Rumus Distandarisasi:* {rumus}")
+            if rumus_umum != "-":
+                st.write(f"*Rumus Umum:* {rumus_umum}")
+            if golongan != "-":
+                st.write(f"*Golongan Senyawa:* {golongan}")
+            st.write(f"*Gugus Fungsi Terdeteksi:* {', '.join(hasil)}")
+            st.write(f"*Nama IUPAC:* {nama_iupac}")
+            st.write(f"*Nama Trivial:* {nama_trivial}")
+
+elif search_mode == "Nama Senyawa":
+    input_nama = st.text_input("Masukkan nama senyawa IUPAC atau trivial, contoh: metana, etana, asam asetat ( ditulis huruf kecil atau huruf kapital):")
+    if input_nama:
+        input_nama_lower = input_nama.strip().lower()
+        found = None
+        for rumus, data in kamus_nama_senyawa.items():
+            if data['iupac'].lower() == input_nama_lower or data['trivial'].lower() == input_nama_lower:
+                found = (rumus, data)
+                break
+        st.markdown("### 🔍 Hasil Identifikasi")
+        if found:
+            rumus, data = found
+            gambar = data.get('gambar', None)
             if gambar:
                 st.image(f"https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/{gambar}", width=250)
             with st.container(border=True):
-                st.write(f"*Rumus Diberikan:* {input_rumus}")
-                st.write(f"*Rumus Distandarisasi:* {rumus}")
-                if rumus_umum != "-":
-                    st.write(f"*Rumus Umum:* {rumus_umum}")
-                if golongan != "-":
-                    st.write(f"*Golongan Senyawa:* {golongan}")
-                st.write(f"*Gugus Fungsi Terdeteksi:* {', '.join(hasil)}")
-                st.write(f"*Nama IUPAC:* {nama_iupac}")
-                st.write(f"*Nama Trivial:* {nama_trivial}")
+                st.write(f"*Nama Diberikan:* {input_nama}")
+                st.write(f"*Rumus Senyawa:* {rumus}")
+                st.write(f"*Nama IUPAC:* {data['iupac']}")
+                st.write(f"*Nama Trivial:* {data['trivial']}")
+                st.write(f"*Golongan Senyawa:* {data.get('golongan', '-')}")
+                st.write(f"*Rumus Umum:* {data.get('rumus_umum', '-')}")
+        else:
+            st.warning("Nama senyawa tidak ditemukan dalam database.")
 
-    else:
-        input_nama = st.text_input("Masukkan nama senyawa IUPAC atau trivial, contoh: metana, etana, asam asetat ( ditulis hurruf kecil atau huruf kapital):")
-        if input_nama:
-            input_nama_lower = input_nama.strip().lower()
-            found = None
-            for rumus, data in kamus_nama_senyawa.items():
-                # Cocokkan dengan nama IUPAC atau trivial
-                if data['iupac'].lower() == input_nama_lower or data['trivial'].lower() == input_nama_lower:
-                    found = (rumus, data)
-                    break
-            st.markdown("### 🔍 Hasil Identifikasi")
-            if found:
-                rumus, data = found
-                gambar = data.get('gambar', None)
-                if gambar:
-                    st.image(f"https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/{gambar}", width=250)
+elif search_mode == "Gugus Fungsi":
+    input_gugus = st.text_input("Masukkan nama gugus fungsi, contoh: Alkohol, Ester, Keton (huruf bebas):")
+    if input_gugus:
+        gugus_input_lower = input_gugus.strip().lower()
+        hasil_pencarian = []
+        for rumus, data in kamus_nama_senyawa.items():
+            golongan = data.get("golongan", "").lower()
+            if gugus_input_lower in golongan:
+                hasil_pencarian.append((rumus, data))
+
+        st.markdown("### 🔍 Hasil Pencarian Gugus Fungsi")
+        if hasil_pencarian:
+            for rumus, data in hasil_pencarian:
                 with st.container(border=True):
-                    st.write(f"*Nama Diberikan:* {input_nama}")
-                    st.write(f"*Rumus Senyawa:* {rumus}")
+                    st.image(f"https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/{data.get('gambar')}", width=200)
                     st.write(f"*Nama IUPAC:* {data['iupac']}")
                     st.write(f"*Nama Trivial:* {data['trivial']}")
+                    st.write(f"*Rumus Senyawa:* {rumus}")
                     st.write(f"*Golongan Senyawa:* {data.get('golongan', '-')}")
                     st.write(f"*Rumus Umum:* {data.get('rumus_umum', '-')}")
-            else:
-                st.warning("Nama senyawa tidak ditemukan dalam database.")
+        else:
+            st.warning("Gugus fungsi tidak ditemukan atau belum ada datanya.")
 
-    elif search_mode == "Gugus Fungsi":
-        input_gugus = st.text_input("Masukkan nama gugus fungsi, contoh: Alkohol, Ester, Keton (huruf bebas):")
-        if input_gugus:
-            gugus_input_lower = input_gugus.strip().lower()
-            hasil_pencarian = []
-            for rumus, data in kamus_nama_senyawa.items():
-                golongan = data.get("golongan", "").lower()
-                if gugus_input_lower in golongan:
-                    hasil_pencarian.append((rumus, data))
-
-            st.markdown("### 🔍 Hasil Pencarian Gugus Fungsi")
-            if hasil_pencarian:
-                for rumus, data in hasil_pencarian:
-                    with st.container(border=True):
-                        st.image(f"https://raw.githubusercontent.com/RIVI44/-PROJEK_LPK_/main/{data.get('gambar')}", width=200)
-                        st.write(f"*Nama IUPAC:* {data['iupac']}")
-                        st.write(f"*Nama Trivial:* {data['trivial']}")
-                        st.write(f"*Rumus Senyawa:* {rumus}")
-                        st.write(f"*Golongan Senyawa:* {data.get('golongan', '-')}")
-                        st.write(f"*Rumus Umum:* {data.get('rumus_umum', '-')}")
-            else:
-                st.warning("Gugus fungsi tidak ditemukan atau belum ada datanya.")
 
 
 
